@@ -73,4 +73,8 @@ install(
 		lua-${LUA_VERSION}
 		luac-${LUA_VERSION}
 		lua
+
+	RUNTIME bin
+	LIBRARY lib
+	ARCHIVE lib
 )
