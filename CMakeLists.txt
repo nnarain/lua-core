@@ -78,3 +78,12 @@ install(
 	LIBRARY DESTINATION lib
 	ARCHIVE DESTINATION lib
 )
+
+file(GLOB_RECURSE INSTALL_HEADERS "include/*.h")
+
+install(
+	FILES
+		${INSTALL_HEADERS}
+	DESTINATION
+		include/lua-${LUA_VERSION}
+)
