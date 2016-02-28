@@ -66,3 +66,11 @@ add_executable(luac-${LUA_VERSION}
 	src/luac.c
 )
 target_link_libraries(luac-${LUA_VERSION} lua m)
+
+# install
+install(
+	TARGETS
+		lua-${LUA_VERSION}
+		luac-${LUA_VERSION}
+		lua
+)
