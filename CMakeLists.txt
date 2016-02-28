@@ -42,6 +42,10 @@ set(LUA_LIB
 	src/linit.c
 )
 
+include_directories(
+	include/
+)
+
 # lua as ansi c
 add_definitions(-DLUA_ANSI -DLUA_COMPAT_ALL)
 
